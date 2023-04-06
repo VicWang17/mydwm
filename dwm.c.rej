@@ -1,0 +1,11 @@
+--- dwm.c
++++ dwm.c
+@@ -232,6 +232,8 @@ static void togglefloating(const Arg *arg);
+ static void toggletag(const Arg *arg);
+ static void toggleview(const Arg *arg);
+ static void togglewin(const Arg *arg);
++static void hidewin(const Arg *arg);
++static void restorewin(const Arg *arg);
+ static void unfocus(Client *c, int setfocus);
+ static void unmanage(Client *c, int destroyed);
+ static void unmapnotify(XEvent *e);
